@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="sub-header">
+        <nav>
+            <a href="index.html">
+                <img src="images/header-background.jpg" class="header-image" alt="Header Image">
+            </a>
+				<div class="nav-links" id="navLinks">	
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="about.html">PRICES</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
+					</ul>
+				</div>
+        </nav>
+    </header>
+
+    <!-- Product List -->
+    <section class="product-list">
+        <div class="product-item">
+            <img src="Images/product1.jpg" alt="Product 1">
+            <h2>Pacific</h2>
+            <p>$19.99</p>
+        </div>
+        <div class="product-item">
+            <img src="Images/product2.jpg" alt="Product 2">
+            <h2>Atlantic</h2>
+            <p>$24.99</p>
+        </div>
+        <div class="product-item">
+            <img src="Images/product3.jpg" alt="Product 3">
+            <h2>Arctic</h2>
+            <p>$29.99</p>
+        </div>
+        <div class="product-item">
+            <img src="Images/product4.jpg" alt="Product 4">
+            <h2>Indian</h2>
+            <p>$14.99</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="about-col">
+            <img src="images/about.jpg" alt="About Image">
+        </div>
+        <h4>About Us</h4>
+        <p>Oferim servicii de cea mai inalta calitate si incredere clientilor nostrii.</p>
+        <div class="icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </section>
+
+    <!-- JavaScript for toggle menu -->
+	<script>
+		var navLinks = document.getElementById("navLinks");
+		var faBars = document.querySelector(".fa-bars");
+		var faClose = document.querySelector(".fa-close");
+
+		function showMenu() {
+			navLinks.style.right = "0";
+			faBars.style.display = "none";
+			faClose.style.display = "block";
+		}
+
+		function hideMenu() {
+			navLinks.style.right = "-200px";
+			faBars.style.display = "block";
+			faClose.style.display = "none";
+		}
+	</script>
+</body>
+</html>

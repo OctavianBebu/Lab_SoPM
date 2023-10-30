@@ -10,6 +10,7 @@
 <body>
     <header class="sub-header">
         <nav>
+			<a href="about.html"><img class="logo" src="images/prices.png"></a>
             <a href="index.html">
                 <img src="images/header-background.jpg" class="header-image" alt="Header Image">
             </a>
@@ -29,7 +30,7 @@
 			<div class="course-col">
 				<img src="Images/product1.jpg" alt="Product 1">
 				<h3>Pacific</h3>
-				<p>$19.99</p>
+				<p><span class="original-price">$19.99</span> $9.99</p>
 			</div>
 			<div class="course-col">
 				<img src="Images/product2.jpg" alt="Product 2">
@@ -46,7 +47,7 @@
 			<div class="course-col">
 				<img src="Images/product4.jpg" alt="Product 4">
 				<h3>Indian</h3>
-				<p>$14.99</p>
+				<p><span class="original-price">$14.99</span> $9.99</p>
 			</div>
 			<div class="course-col">
 				<img src="images/p1.png" alt="Product 5">
@@ -56,7 +57,7 @@
 			<div class="course-col">
 				<img src="Images/p2.png" alt="Product 6">
 				<h3>BEADED LEATHER</h3>
-				<p>$39.99</p>
+				<p><span class="original-price">$39.99</span> $25.99</p>
 			</div>
 		</div>
 		<div class="row">
@@ -73,18 +74,18 @@
 			<div class="course-col">
 				<img src="Images/base.png" alt="Product 9">
 				<h3>Navy Style</h3>
-				<p>$22.99</p>
+				<p><span class="original-price">$22.99</span> $18.99</p>
 			</div>
 		</div>
     </section>
-
+	
     <!-- Footer -->
     <section class="footer">
         <div class="about-col">
             <img src="images/about.jpg" alt="About Image">
         </div>
         <h4>About Us</h4>
-        <p>Oferim servicii de cea mai inalta calitate si incredere clientilor nostrii.</p>
+        <p>We offer services of the highest quality and trust to our customers.</p>
         <div class="icons">
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-twitter"></i></a>
@@ -92,24 +93,30 @@
             <a href="#"><i class="fa fa-linkedin"></i></a>
         </div>
     </section>
+	
+	<!-- Pop-up Modal -->
+	<div id="discountModal" class="modal">
+		<div class="modal-content">
+			<span class="close" onclick="closeModal()">&times;</span>
+			<h2>Black Friday Discount!</h2>
+			<p>Get 20% off on all products this Black Friday!</p>
+		</div>
+	</div>
 
+	
     <!-- JavaScript for toggle menu -->
 	<script>
-		var navLinks = document.getElementById("navLinks");
-		var faBars = document.querySelector(".fa-bars");
-		var faClose = document.querySelector(".fa-close");
+        // Function to display the modal
+        function openModal() {
+            var modal = document.getElementById("discountModal");
+            modal.style.display = "block";
+        }
 
-		function showMenu() {
-			navLinks.style.right = "0";
-			faBars.style.display = "none";
-			faClose.style.display = "block";
-		}
-
-		function hideMenu() {
-			navLinks.style.right = "-200px";
-			faBars.style.display = "block";
-			faClose.style.display = "none";
-		}
-	</script>
+        // Function to close the modal
+        function closeModal() {
+            var modal = document.getElementById("discountModal");
+            modal.style.display = "none";
+        }
+    </script>
 </body>
 </html>

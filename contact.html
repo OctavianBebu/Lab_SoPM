@@ -1,22 +1,84 @@
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daniel Translations</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+	<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .sub-header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .nav-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .location iframe {
+            width: 100%;
+        }
+
+        .contact-us {
+            background-color: white;
+            padding: 20px;
+        }
+
+        .contact-col {
+            display: inline-block;
+            width: 45%;
+            margin: 2.5%;
+        }
+
+        .contact-col i {
+            font-size: 24px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer h4 {
+            margin: 0;
+        }
+
+        .icons i {
+            font-size: 24px;
+            margin: 10px;
+        }
+		
+		
+    </style>
+
 </head>
 <body>
     <section class="sub-header">
         <nav>
-            <a href="index.html"><img src="images/header-background.jpg"></a>
+            <center><a href="index.html"><img src="images/ContactPoza.png"></a></center>
             <div class="nav-links" id="navLinks">  
                 <i class="fa fa-close" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">PRETURI</a></li>
-                    <li><a href="course.html">TRADUCERI</a></li>
-                    <li><a href="blog.html">SERVICII</a></li>
+                    
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
@@ -30,31 +92,31 @@
 
     
     <section class="location">
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.5009635113965!2d-1.949857088122891!3d52.506272437129766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bd306b96aaab%3A0xe1c33c838b299c71!2s38a%20Holyhead%20Rd%2C%20Handsworth%2C%20Birmingham%20B21%200LS%2C%20UK!5e0!3m2!1sen!2sro!4v1679691807839!5m2!1sen!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <center><iframe src="http://maps.google.com/maps?q=45.645733, 25.602697&z=15&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
     </section>
     
     <section class="contact-us">
             <div class="row">
                 <div class="contact-col">
                     <div>
-                        <i class="fa fa-home"></i>
-                        <span>
-                            <h5>Holyhead Road 38A</h5>
-                            <p>Birmingham, B210LS, EN</p>
-                        </span>
-                    </div>
+						<i class="fa fa-home" style="font-size: 24px; margin-right: 10px;"></i>
+						<span>
+							<h5 style="font-size: 18px; margin: 0;">Strada Politehnicii 1, Brașov</h5>
+							<p style="font-size: 16px; margin: 0;">Brasov</p>
+						
+					</div>
                     <div>
                         <i class="fa fa-phone"></i>
                         <span>
-                            <h5>+0044 7405656372</h5>
-                            <p>De Luni pana Vineri 9 Am - 4 Pm</p>
+                            <h1>0756988322</h1>
+                            <p>Monday to Friday 9 Am - 4 Pm</p>
                         </span>
                     </div>
                     <div>
                         <i class="fa fa-envelope-o"></i>
                         <span>
-                            <h5>alexdan544@gmail.com</h5>
-                            <p>Cu ce va putem ajuta?</p>
+                            <h5>fabianbebu@gmail.com</h5>
+                            <p>How can we help?</p>
                         </span>
                     </div>
                 </div>
@@ -72,17 +134,17 @@
     
 <!-------- footer ---------->
 
-<section class="footer">
-        <h4>About Us</h4>
-        <p>Oferim servicii de cea mai inalta calitate si incredere clientilor nostrii</p>
-        <div class="icons">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-linkedin"></i>
-        </div>
-        
-</section>    
+<section class="footer" style="background-color: #333; color: white; text-align: center; padding: 20px 0;">
+    <h4 style="margin: 0; font-size: 20px;">About Us</h4>
+    <p style="font-size: 16px;">We offer services of the highest quality and trust to our customers.</p>
+    <div class="icons" style="font-size: 24px; margin: 10px;">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+</section>
+  
   
   
 <!----JavaScript for toggle menu---->
@@ -98,5 +160,59 @@
     }
 </script> 
     
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<script>
+    // Selectează elementul pe care dorești să-l animezi
+    var element = document.querySelector(".sub-header h1");
+
+    // Setează o funcție care va realiza animația
+    function animate() {
+        element.style.transform = "scale(1.6)"; // Mărește dimensiunea elementului
+        setTimeout(function () {
+            element.style.transform = "scale(1)"; // Redu dimensiunea elementului la dimensiunea inițială
+        }, 500); // Aici poți seta intervalul de timp al animației (în milisecunde)
+    }
+
+    // Apelează funcția de animație la un anumit interval
+    setInterval(animate, 1000); // De exemplu, la fiecare secundă
+
+</script>
+
+	
+	
+	
+	
+	
+	
+<script>
+    var phoneElement = document.querySelector(".contact-col h1");
+    var colors = ["red", "blue", "green", "orange", "purple"];
+    var currentIndex = 0;
+
+    function changePhoneColor() {
+        phoneElement.style.color = colors[currentIndex];
+        currentIndex = (currentIndex + 1) % colors.length;
+    }
+
+    // Apelează funcția pentru schimbarea culorii la fiecare secundă
+    setInterval(changePhoneColor, 1000);
+</script>
+
+
+
+
+	
+	
+	
+	
+	
 </body>
 </html>    

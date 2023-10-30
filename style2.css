@@ -24,6 +24,10 @@ header {
     padding: 100px 0; /* Added padding for spacing */
 }
 
+.sub-header {
+    position: relative; /* Make the header a relative container */
+}
+
 .header-image {
     max-width: 20%;
     height: auto;
@@ -33,24 +37,27 @@ header {
 
 nav {
     display: flex;
-    flex-direction: column; /* Stack navigation items vertically */
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center the navigation horizontally */
+    align-items: center; /* Center the navigation vertically */
     padding: 20px 0;
 }
 
 .nav-links {
-    display: flex;
-    align-items: center;
+    position: absolute;
+    bottom: 40px; /* Position the navigation links at the bottom of the header */
+    left: 50%; /* Center the navigation horizontally */
+    transform: translateX(-50%); /* Center the navigation horizontally */
 }
 
 .nav-links ul {
     list-style: none;
     padding: 0;
+    display: flex; /* Display navigation links in a row */
+    margin: 0; /* Remove margin for the ul element */
 }
 
 .nav-links ul li {
-    margin: 20px 0;
+    margin: 0 20px; /* Add spacing between navigation links */
 }
 
 .nav-links ul li a {
@@ -200,11 +207,58 @@ h1 {
     color: #f44336;
 }
 
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;  
+}
+  
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+} 
+
 /* Responsive navigation styles */
 @media (max-width: 700px) {
     .nav-links ul {
-        display: none;
-        flex-direction: column;
+        display: flex; /* Change from 'display: none' to 'display: flex' */
+        flex-direction: row; /* Change from 'flex-direction: column' to 'flex-direction: row' */
         position: absolute;
         top: 0;
         right: -200px;
@@ -217,8 +271,8 @@ h1 {
     }
 
     .nav-links ul li {
-        display: block;
-        padding: 10px 30px;
+        display: inline; /* Change from 'display: block' to 'display: inline' */
+        padding: 10px 20px; /* Adjust the padding as needed */
     }
 
     .fa-bars {
